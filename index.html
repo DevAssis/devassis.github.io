@@ -1,33 +1,395 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AssisDataIA - Início</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portfólio de Milton Assis — RPA Developer em evolução para AI Hyperautomation Engineer, focado em Python, APIs, agentes de IA, RAG, Prompt Engineering e Context Engineering." />
+  <meta name="theme-color" content="#080914" />
+  <title>Milton Assis | AI Hyperautomation Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="dark-blue">
-    <div class="container">
-        <img class="avatar" src="https://github.com/DevAssis.png" alt="Foto de perfil do Milton Assis" />
-        <h1>AssisDataIA</h1>
-        <p class="username">@assisdataia</p>
-        <ul>
-            <li><a href="https://wa.me/5544999812162?text=Olá%20DevAssis!" target="_blank">🤳Whatsapp</a></li>
-            <li><a href="https://www.linkedin.com/in/miltonbispoassis/" target="_blank">🧑‍💻Linkedin</a></li>
-            <li><a href="https://github.com/DevAssis" target="_blank">💻Github</a></li>
-            <li><a href="https://www.instagram.com/assisdataia/" target="_blank">📧Instagram</a></li>
-            <li><a href="https://www.youtube.com/channel/UCjLsXTiXJ6ayRNOHRwNuBCw" target="_blank">▶ Youtube</a></li>
-        </ul>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
 
-        <footer>
-            Feito por AssisDataIA
-            <!-- Link para a política de privacidade no GitHub Pages -->
-            <p><a href="/AssisDataIA/politica_privacidade.html" target="_blank">Política de Privacidade e Cookies</a></p>
-        </footer>
+  <div class="workspace-shell">
+    <aside class="activity-bar" aria-label="Navegação principal">
+      <a class="activity-logo" href="#top" aria-label="Início">MA</a>
+      <a href="#projects" title="Projetos" aria-label="Projetos">⌘</a>
+      <a href="#stack" title="Stack" aria-label="Stack">λ</a>
+      <a href="#method" title="Método" aria-label="Método">◇</a>
+      <a href="#contact" title="Contato" aria-label="Contato">↗</a>
+    </aside>
+
+    <aside class="explorer-panel">
+      <div class="panel-title">portfolio.workspace</div>
+      <nav class="file-tree" aria-label="Seções do portfólio">
+        <a href="#top"><span class="dot cyan"></span> hero.md</a>
+        <a href="#about"><span class="dot purple"></span> about.json</a>
+        <a href="#projects"><span class="dot green"></span> cases.ts</a>
+        <a href="#stack"><span class="dot yellow"></span> stack.yaml</a>
+        <a href="#method"><span class="dot pink"></span> playbook.ai</a>
+        <a href="#contact"><span class="dot cyan"></span> contact.env</a>
+      </nav>
+
+      <div class="mini-card">
+        <span class="mini-label">Focus</span>
+        <strong>RPA → IPA → AI Engineering</strong>
+        <p>Automação, IA aplicada, contexto, agentes e soluções auditáveis.</p>
+      </div>
+    </aside>
+
+    <main class="editor-surface" id="top">
+      <header class="topbar">
+        <div class="tabs" aria-label="Abas visuais">
+          <button class="tab active">milton.profile</button>
+          <button class="tab js-construction-tab" type="button"
+            data-feature="agentic.workflow">agentic.workflow</button>
+          <button class="tab js-construction-tab" type="button"
+            data-feature="hyperautomation.map">hyperautomation.map</button>
+        </div>
+        <button class="command-button" id="commandButton" type="button">⌘K Mission</button>
+      </header>
+
+      <section class="hero section-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">RPA Developer · AI Automation · Context Engineering</p>
+          <h1>
+            Milton Assis
+            <span>construindo automações inteligentes para problemas reais de negócio.</span>
+          </h1>
+          <p class="hero-text">
+            Desenvolvedor RPA em evolução para Engenheiro de Hiperautomação com IA,
+            focado em Python, APIs, workflows, agentes, RAG, evals e engenharia de contexto
+            para transformar processos corporativos em soluções escaláveis, seguras e auditáveis.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">Ver cases</a>
+            <a class="btn ghost" href="#contact">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="terminal-card reveal" aria-label="Resumo em formato de terminal">
+          <div class="terminal-header">
+            <span></span><span></span><span></span>
+            <strong>trinity://career-objective</strong>
+          </div>
+          <pre><code><span class="muted">$</span> mission --profile milton
+{
+  "role": "RPA Developer",
+  "next_step": "AI Hyperautomation Engineer",
+  "core": ["Python", "APIs", "RPA", "AI Agents"],
+  "differentials": [
+    "Prompt Engineering",
+    "Context Engineering",
+    "Spec-Driven Development",
+    "Controlled AI-Assisted Vibe Coding",
+    "RAG + Evals + LLMOps"
+  ],
+  "output": "business solutions with traceability"
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="metrics-strip reveal" aria-label="Destaques profissionais">
+        <article>
+          <span>01</span>
+          <strong>Automação orientada a valor</strong>
+          <p>Redução de esforço manual, padronização operacional e rastreabilidade.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>IA aplicada com controle</strong>
+          <p>Uso de LLMs com contexto, restrições, validação e governança.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Arquitetura pragmática</strong>
+          <p>Do problema de negócio ao fluxo técnico implementável.</p>
+        </article>
+      </section>
+
+      <section class="content-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">about.json</p>
+          <h2>Perfil profissional</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3>Da análise operacional à hiperautomação</h3>
+            <p>
+              Minha trajetória combina análise de dados operacionais, controle de processos,
+              padronização de informações e visão sistêmica de negócio. Essa base me ajudou a
+              desenvolver uma abordagem orientada a diagnóstico, eficiência, confiabilidade e
+              melhoria contínua.
+            </p>
+            <p>
+              Hoje construo automações com Python, integrações via APIs, tratamento de dados,
+              geração de relatórios, validações, logs e fluxos RPA. Meu foco não é apenas
+              automatizar tarefas, mas redesenhar processos para gerar impacto real e mensurável.
+            </p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>IA como camada de inteligência operacional</h3>
+            <p>
+              Estou direcionando minha evolução para IA aplicada à automação: agentes de IA, RAG,
+              Prompt Engineering, Context Engineering, evals, LLMOps e sistemas agentic. A tese é
+              simples: IA só gera valor quando é integrada ao processo certo, com contexto certo,
+              regras claras e avaliação contínua.
+            </p>
+            <p>
+              Trabalho com mentalidade de engenharia: especificar, testar, observar, documentar e
+              melhorar. Vibe coding com IA, sim — mas sempre com controle, arquitetura e critérios
+              de validação.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">cases.ts</p>
+          <h2>Cases e frentes de construção</h2>
+          <p>
+            Projetos descritos de forma genérica para preservar confidencialidade, mantendo o foco
+            no problema, arquitetura, stack e valor entregue.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="card-kicker">RPA · Comunicação · Logs</div>
+            <h3>Motor de comunicação automatizada</h3>
+            <p>
+              Automação para geração de mensagens personalizadas, anexos, validações de dados,
+              envio controlado e relatórios de execução.
+            </p>
+            <ul>
+              <li>Templates dinâmicos e padronização de conteúdo.</li>
+              <li>Logs técnicos para auditoria e troubleshooting.</li>
+              <li>Relatórios de sucesso, falha e inconsistência.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>Excel</span><span>Email Automation</span><span>Logging</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-kicker">RPA · Web · Documentos</div>
+            <h3>Pipeline de coleta, download e organização</h3>
+            <p>
+              Fluxo automatizado para navegação em sistema web, parametrização de períodos,
+              download de arquivos, renomeação inteligente e consolidação de relatório.
+            </p>
+            <ul>
+              <li>Automação browser-first com tratamento de exceções.</li>
+              <li>Padronização de nomes e diretórios.</li>
+              <li>Rastreabilidade por logs e relatório final.</li>
+            </ul>
+            <div class="tags"><span>Selenium</span><span>Python</span><span>Files</span><span>Reports</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-kicker">APIs · Integração · Dados</div>
+            <h3>Integração com APIs e sistemas legados</h3>
+            <p>
+              Consumo de APIs com autenticação, tokens, payloads, headers, leitura de respostas,
+              tratamento de status e transformação de dados para uso operacional.
+            </p>
+            <ul>
+              <li>Fluxos com autenticação e chamadas HTTP.</li>
+              <li>Tratamento de erros, retry e validação.</li>
+              <li>Conversão de dados em informação acionável.</li>
+            </ul>
+            <div class="tags"><span>Requests</span><span>REST APIs</span><span>JSON</span><span>ETL</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-kicker">AI · Code Intelligence</div>
+            <h3>AI RPA Copilot</h3>
+            <p>
+              Conceito de assistente inteligente para analisar scripts, DAGs e fluxos de automação,
+              explicar dependências, identificar riscos e gerar documentação técnica.
+            </p>
+            <ul>
+              <li>Análise de código com LLM e regras de segurança.</li>
+              <li>Documentação automática e checklist técnico.</li>
+              <li>Base para troubleshooting assistido por IA.</li>
+            </ul>
+            <div class="tags"><span>LLMs</span><span>FastAPI</span><span>RAG</span><span>Evals</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-kicker">RAG · Knowledge Systems</div>
+            <h3>Assistente de conhecimento operacional</h3>
+            <p>
+              Arquitetura de busca contextual para consultar documentos, procedimentos, logs,
+              padrões técnicos e histórico de decisões com respostas rastreáveis.
+            </p>
+            <ul>
+              <li>Ingestão documental e chunking planejado.</li>
+              <li>Embeddings, busca vetorial e resposta com fontes.</li>
+              <li>Guardrails para reduzir alucinação.</li>
+            </ul>
+            <div class="tags"><span>RAG</span><span>Vector DB</span><span>Prompt Security</span><span>Context</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-kicker">SDD · Agentic Workflow</div>
+            <h3>Desenvolvimento assistido por IA controlada</h3>
+            <p>
+              Prática de desenvolvimento com IA usando especificações, contratos de entrada/saída,
+              revisão crítica, testes e iteração orientada a resultado.
+            </p>
+            <ul>
+              <li>Especificação antes do código.</li>
+              <li>Prompts como artefatos versionáveis.</li>
+              <li>Evals para medir qualidade e segurança.</li>
+            </ul>
+            <div class="tags"><span>SDD</span><span>AI Coding</span><span>Claude Code</span><span>Codex</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">stack.yaml</p>
+          <h2>Stack e competências</h2>
+        </div>
+
+        <div class="stack-grid reveal">
+          <div class="stack-column">
+            <h3>Automation Core</h3>
+            <span>Python</span><span>RPA</span><span>Selenium</span><span>Power
+              Automate</span><span>n8n</span><span>Airflow</span>
+          </div>
+          <div class="stack-column">
+            <h3>Data & Integration</h3>
+            <span>SQL</span><span>Excel Automation</span><span>APIs
+              REST</span><span>JSON</span><span>ETL</span><span>Logs</span>
+          </div>
+          <div class="stack-column">
+            <h3>Applied AI</h3>
+            <span>Prompt Engineering</span><span>Context Engineering</span><span>RAG</span><span>AI
+              Agents</span><span>Evals</span><span>LLMOps</span>
+          </div>
+          <div class="stack-column">
+            <h3>Engineering Practice</h3>
+            <span>Git</span><span>Spec-Driven Development</span><span>Clean
+              Architecture</span><span>Observability</span><span>Documentation</span><span>Governance</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="method">
+        <div class="section-heading reveal">
+          <p class="eyebrow">playbook.ai</p>
+          <h2>Método de construção</h2>
+          <p>Um playbook para transformar demanda operacional em solução inteligente.</p>
+        </div>
+
+        <div class="pipeline reveal" aria-label="Pipeline de solução">
+          <div><span>01</span><strong>Discover</strong>
+            <p>Entender dor, regra de negócio e restrições.</p>
+          </div>
+          <div><span>02</span><strong>Specify</strong>
+            <p>Criar contrato, escopo, entradas, saídas e riscos.</p>
+          </div>
+          <div><span>03</span><strong>Automate</strong>
+            <p>Construir fluxo com Python, APIs, RPA ou workflow.</p>
+          </div>
+          <div><span>04</span><strong>Augment</strong>
+            <p>Adicionar IA, contexto, ferramentas e agentes quando fizer sentido.</p>
+          </div>
+          <div><span>05</span><strong>Evaluate</strong>
+            <p>Testar qualidade, segurança, custo, latência e rastreabilidade.</p>
+          </div>
+        </div>
+
+        <div class="code-window reveal">
+          <div class="terminal-header">
+            <span></span><span></span><span></span>
+            <strong>architecture.map</strong>
+          </div>
+          <pre><code>Business Problem
+  └─ Process Mapping
+      └─ Data + Rules + Exceptions
+          └─ Automation Layer: Python | RPA | APIs | Workflows
+              └─ AI Layer: Prompts | Context | RAG | Agents | Tools
+                  └─ Evaluation: Tests | Evals | Logs | Human Review
+                      └─ Business Output: reliable, auditable, scalable</code></pre>
+        </div>
+      </section>
+
+      <section class="content-section contact-section" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">contact.env</p>
+          <h2>Vamos construir algo inteligente?</h2>
+          <p>
+            Aberto a conexões sobre RPA, IA aplicada, agentes, RAG, engenharia de contexto,
+            automação de processos e soluções corporativas.
+          </p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <a class="contact-card" href="mailto:mbadatascientist@gmail.com">
+            <span>Email</span>
+            <strong>mbadatascientist@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/miltonbispoassis" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/miltonbispoassis</strong>
+          </a>
+          <a class="contact-card" href="https://github.com/DevAssis" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/DevAssis</strong>
+          </a>
+        </div>
+      </section>
+
+      <footer class="statusbar">
+        <span>MA Portfolio</span>
+        <span>AI-native · Minimal · Cyberpunk</span>
+        <span><a href="politica_privacidade.html">Politica de Privacidade</a></span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="command-palette" id="commandPalette" aria-hidden="true" aria-labelledby="commandPaletteTitle"
+    role="dialog" aria-modal="true" tabindex="-1">
+    <div class="palette-box">
+      <h2 class="sr-only" id="commandPaletteTitle">Paleta de comandos</h2>
+      <div class="palette-input">⌘K <span>mission.search</span></div>
+      <a href="#projects">Ver cases de automação</a>
+      <a href="#stack">Explorar stack técnica</a>
+      <a href="#method">Ver método de construção</a>
+      <a href="#contact">Abrir contato</a>
+      <a href="politica_privacidade.html">Abrir politica de privacidade</a>
     </div>
+  </div>
+
+  <div class="construction-modal" id="constructionModal" aria-hidden="true" aria-labelledby="constructionTitle"
+    role="dialog" aria-modal="true" tabindex="-1">
+    <div class="construction-box">
+      <p class="mini-label">status.system</p>
+      <h2 id="constructionTitle">Pagina em construcao</h2>
+      <p>
+        A guia <strong id="constructionFeatureName">feature</strong> ainda esta em desenvolvimento.
+      </p>
+      <p class="construction-subtext">
+        Em breve esta area tera conteudo completo sobre <strong id="constructionFeatureName">feature</strong>. Fique a
+        vontade para explorar as outras seções do portfolio ou entrar em contato para saber mais!
+      </p>
+      <button class="btn ghost construction-close" id="constructionCloseButton" type="button">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
